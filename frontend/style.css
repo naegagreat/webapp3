@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F2E5BF; /* Light beige for a clean background */
+  color: rgb(20, 52, 38); /* Dark text for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #257180; /* สีของ nav bar */
+  position: fixed; /* ทำให้ nav bar อยู่บนสุด */
+  top: 0; /* กำหนดให้ nav bar อยู่ที่ด้านบนสุด */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* ให้แน่ใจว่าสูงกว่าเนื้อหาอื่น */
+  padding: 5px 0; /* ลดการเว้นระยะในแนวตั้ง */
+}
+
+nav h1 {
+  text-align: center;
+  font-size: 20px; /* ลดขนาดฟอนต์สำหรับชื่อใน nav bar */
+  color: #ffffff; /* White text for navbar */
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* ลดช่องว่างระหว่างลิงก์ */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff; /* White text for links */
+  font-size: 14px; /* ลดขนาดฟอนต์สำหรับลิงก์ */
+  padding: 5px 10px; /* ลดการเว้นระยะภายในลิงก์ */
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #CB6040; /* Hover color */
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  padding-top: 100px; /* เพิ่มความสูงของ padding-top เพื่อหลีกเลี่ยงการบัง */
+}
+
+.card {
+  background: #ffffff; /* White card for content */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  max-width: 500px; /* Limit card width */
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.page {
+  display: none; /* Initially hidden */
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #854728; /* Success color */
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #257180; /* Primary button color */
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(37, 113, 128); /* Darker on hover */
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #CED4DA; /* Light gray border */
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Adjust for padding */
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  background-color: #ffffff; /* White table background */
+  border-collapse: collapse;
+  margin-top: 150px; /* เพิ่ม margin-top เพื่อเลื่อนตารางลงมา */
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  color: #212529; /* Dark text for contrast */
+  border-bottom: 1px solid #dee2e6; /* Light gray border */
+}
+
+th {
+  background-color: rgb(216, 196, 183); /* Light beige for header */
+}
+.pagination-controls {
+  display: flex; /* ใช้ flexbox เพื่อจัดเรียงปุ่ม */
+  justify-content: center; /* จัดให้ปุ่มอยู่ตรงกลาง */
+  margin-top: 20px; /* เพิ่มระยะห่างด้านบนถ้าต้องการ */
+}
+
+.pagination-controls button {
+  margin: 0 50px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
